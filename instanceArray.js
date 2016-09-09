@@ -46,10 +46,12 @@ console.log('Lenny\'s information is ');
   //code here
 users.push (User("Jason", "jas.sanders@gmail.com", "boom"));
 
-console.log('All my users names are ');
+console.log('All my users names are ' + allUsers());
 //Now loop through your users Array and console.log every users name.
 
   //code here
-for(var i = 0; i < users.length; i++) {
-  users[i].display();
-}
+var allUsers = function(){
+  for(var i = 0; i < users.length; i++) {
+    users[i].display();
+  }
+};
